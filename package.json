@@ -1,0 +1,16 @@
+{
+  "name": "drive-ready",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Driving theory practice with personalised study readiness and responsive layouts.",
+  "scripts": {
+    "start": "node server.cjs",
+    "preview": "node server.cjs --dist",
+    "build": "node scripts/build.cjs",
+    "test": "node --test tests/content.test.cjs tests/readiness.test.cjs",
+    "test:browser": "npm run build && playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0"
+  }
+}

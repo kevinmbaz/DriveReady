@@ -1,0 +1,46 @@
+# Dependencies, helper tools and caches
+node_modules/
+.tools/
+.uv-cache/
+.npm-cache/
+__pycache__/
+*.py[cod]
+
+# Generated builds, tests and local preview data
+dist/
+test-results/
+test-artifacts/
+coverage/
+.runtime/
+*.log
+*.tsbuildinfo
+study-source/book.txt
+study-source/pages.json
+
+# Environment variables and credentials
+.env
+.env.*
+!.env.example
+!.env.sample
+.npmrc
+.netrc
+credentials.json
+service-account*.json
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Personal study backups
+driveready-progress-*.json
+
+# Local editor, deployment and OS files
+.vscode/
+.idea/
+.codex/
+.agents/
+.vercel/
+.netlify/
+.DS_Store
+Thumbs.db
+desktop.ini

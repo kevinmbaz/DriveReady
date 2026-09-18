@@ -1,0 +1,11 @@
+{
+  "name": "DriveReady — Driving Theory Practice",
+  "short_name": "DriveReady",
+  "description": "Build your driving theory knowledge and track your practice readiness.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f8f9f5",
+  "theme_color": "#203e38",
+  "icons": [{"src":"assets/favicon.svg","sizes":"any","type":"image/svg+xml","purpose":"any"}]
+}

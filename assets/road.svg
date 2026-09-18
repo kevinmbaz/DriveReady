@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 530 340" fill="none">
+<circle cx="332" cy="159" r="147" fill="#2a5145"/><circle cx="332" cy="159" r="111" stroke="#3c6251" stroke-dasharray="3 8"/>
+<path d="M540 302H339c-67 0-43-103-99-103h-29c-66 0-56-101 9-101h151c65 0 64-79 4-79H229" stroke="#476b5b" stroke-width="75"/>
+<path d="M540 302H339c-67 0-43-103-99-103h-29c-66 0-56-101 9-101h151c65 0 64-79 4-79H229" stroke="#779383" stroke-width="2" stroke-dasharray="12 13"/>
+<path d="M540 343H337c-94 0-62-103-99-103h-26c-121 0-111-183 8-183h151c13 0 12 1 0 1H226" stroke="#365b4c" stroke-width="2"/>
+<g transform="translate(292 76) rotate(0 37 21)"><rect x="2" y="7" width="81" height="42" rx="15" fill="#14372e" opacity=".4"/><rect x="0" y="0" width="76" height="40" rx="12" fill="#e8c87e"/><rect x="23" y="4" width="31" height="32" rx="7" fill="#f6dda5"/><path d="M22 5h-8l-5 6v18l5 6h8zM56 5h7l5 6v18l-5 6h-7z" fill="#264438"/><path d="M30 5h17M30 35h17" stroke="#ab8d51" stroke-width="2"/><rect x="68" y="6" width="5" height="8" rx="2" fill="#fff2c2"/><rect x="68" y="26" width="5" height="8" rx="2" fill="#fff2c2"/><rect x="3" y="7" width="3" height="6" rx="1" fill="#ca6e52"/><rect x="3" y="27" width="3" height="6" rx="1" fill="#ca6e52"/></g>
+<g transform="translate(417 201)"><path d="M0 0v45" stroke="#96ad85" stroke-width="5"/><path d="M-20 3a20 20 0 1140 0c0 21-20 29-20 29S-20 23-20 3" fill="#dfecb6"/><circle cy="3" r="7" fill="#3e6550"/></g>
+<g fill="#709067"><circle cx="125" cy="106" r="14"/><circle cx="110" cy="120" r="15"/><circle cx="132" cy="124" r="17"/><circle cx="348" cy="210" r="15"/><circle cx="334" cy="221" r="15"/><circle cx="355" cy="228" r="16"/><circle cx="442" cy="70" r="12"/></g>
+<g fill="#9dae80"><circle cx="92" cy="277" r="4"/><circle cx="407" cy="159" r="4"/><circle cx="256" cy="263" r="5"/><circle cx="173" cy="38" r="4"/><path d="M147 265v-14m-7 7h14M478 129v-14m-7 7h14" stroke="#9dae80" stroke-width="2"/></g>
+<g transform="translate(163 248)"><path d="M0 0v43" stroke="#78907c" stroke-width="4"/><rect x="-17" y="-17" width="34" height="34" rx="7" fill="#e3edca"/><path d="M-5 8V-8h7a5 5 0 010 10h-7" stroke="#3f6450" stroke-width="3"/></g>
+</svg>

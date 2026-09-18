@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#203e38">
+  <meta name="description" content="Learn your driving theory with visual quizzes, quick challenges and your own course book.">
+  <meta property="og:title" content="DriveReady — Your road to passing">
+  <meta property="og:description" content="Practise driving theory, understand your mistakes and track your exam readiness, one question at a time.">
+  <meta property="og:type" content="website">
+  <meta name="color-scheme" content="light">
+  <meta name="author" content="Kevin Mbaz">
+  <title>DriveReady — Your road to passing</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="manifest" href="manifest.webmanifest">
+  <script defer src="questions.js"></script>
+  <script defer src="study-engine.js"></script>
+  <script defer src="readiness-ui.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="shell">
+    <aside class="sidebar">
+      <a class="brand" href="#home" aria-label="DriveReady home"><span class="brand-mark">d<span>r</span></span>Drive<span>Ready</span><span class="brand-dot">.</span></a>
+      <button class="icon-button mobile-menu-button" data-action="menu" aria-label="Open navigation menu" aria-haspopup="dialog"><span data-icon="grid"></span></button>
+      <div class="workspace-tag">YOUR PERSONAL DRIVING COACH</div>
+      <nav aria-label="Main navigation">
+        <a href="#home" data-nav="home"><span data-icon="grid"></span>Overview</a>
+        <a href="#readiness" data-nav="readiness"><span data-icon="target"></span>Exam readiness</a>
+        <a href="#topics" data-nav="topics"><span data-icon="route"></span>Practice by topic</a>
+        <a href="#challenge" data-nav="challenge"><span data-icon="timer"></span>Timed challenge<span class="nav-new">20 Q</span></a>
+        <a href="#mistakes" data-nav="mistakes"><span data-icon="repeat"></span>My mistakes<span id="mistake-badge" class="nav-count">0</span></a>
+        <a href="#saved" data-nav="saved"><span data-icon="bookmark"></span>Saved questions</a>
+        <div class="nav-divider"></div>
+        <a href="#book" data-nav="book"><span data-icon="book"></span>My study book<span class="tiny-dot"></span></a>
+        <a href="#progress" data-nav="progress"><span data-icon="chart"></span>My progress</a>
+        <a href="#about" data-nav="about"><span data-icon="shield"></span>About & privacy</a>
+      </nav>
+      <div class="sidebar-bottom"><div class="learner-icon" data-icon="wheel"></div><strong>A little practice. A lot of progress.</strong><p>Your next chapter starts in the driver’s seat.</p><div class="local-label"><span class="tiny-dot"></span>Progress saved on this device</div></div>
+    </aside>
+    <div class="main-wrap">
+      <header class="topbar"><div class="breadcrumb">Your learning space <span>/</span> <strong id="page-label">Overview</strong></div><div class="topbar-right"><span class="streak-pill"><span data-icon="flame"></span><b id="streak-count">0</b> day streak</span><span class="avatar" aria-label="Learner profile">L</span></div></header>
+      <main id="main" tabindex="-1"></main>
+      <footer>
+        <div class="footer-developer"><span>Developed by <a href="#about">Kevin Mbaz</a></span><div class="footer-contacts" aria-label="Developer contact details"><a href="https://www.linkedin.com/in/kevin-mwen-48029b183/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://www.alemdarteknik.com/en" target="_blank" rel="noopener noreferrer">alemdarteknik.com</a><a href="tel:+905428753160">+90 542 875 3160</a><a href="mailto:kevinmbaz12@gmail.com">kevinmbaz12@gmail.com</a></div></div>
+        <div class="footer-notes"><a href="#about">About & privacy</a><span>Based on your driving-school book <span class="footer-dot">·</span> Practice questions, not an official exam</span></div>
+      </footer>
+    </div>
+  </div>
+  <nav class="mobile-bottom-nav" aria-label="Quick navigation"><a href="#home" data-mobile-nav="home"><span data-icon="grid"></span>Home</a><a href="#topics" data-mobile-nav="topics"><span data-icon="route"></span>Practice</a><a href="#readiness" data-mobile-nav="readiness"><span data-icon="target"></span>Readiness</a><button data-action="menu" aria-label="More navigation options" aria-haspopup="dialog"><span data-icon="book"></span>More</button></nav>
+  <dialog id="navigation-dialog" aria-labelledby="navigation-title"><div class="reader-header"><h2 id="navigation-title">Your learning space</h2><button class="icon-button" data-action="close-menu" aria-label="Close navigation menu">×</button></div><nav aria-label="All sections"><a href="#home"><span data-icon="grid"></span>Overview</a><a href="#topics"><span data-icon="route"></span>Practice by topic</a><a href="#readiness"><span data-icon="target"></span>Exam readiness</a><a href="#challenge"><span data-icon="timer"></span>Timed challenge</a><a href="#mistakes"><span data-icon="repeat"></span>My mistakes</a><a href="#saved"><span data-icon="bookmark"></span>Saved questions</a><a href="#book"><span data-icon="book"></span>My study book</a><a href="#progress"><span data-icon="chart"></span>My progress</a><a href="#about"><span data-icon="shield"></span>About & privacy</a></nav></dialog>
+  <dialog id="source-dialog" aria-labelledby="source-title"><div class="reader-header"><div><span class="eyebrow">YOUR STUDY BOOK</span><h2 id="source-title">Source page</h2></div><button class="icon-button" data-action="close-source" aria-label="Close book reader">×</button></div><div class="reader-toolbar"><button class="button secondary small" data-action="prev-page">← Previous</button><label>Page <select id="reader-page" aria-label="Choose book page"></select></label><button class="button secondary small" data-action="next-page">Next →</button><button class="button secondary small" data-action="zoom-page" aria-pressed="false">Zoom in</button></div><div class="reader-image-wrap" tabindex="0" aria-label="Scanned book page; scroll to read"><img id="source-image" alt="Scanned page from your driving-school book"></div></dialog>
+  <dialog id="restore-dialog" aria-labelledby="restore-title"><div class="reader-header"><h2 id="restore-title">Restore your progress?</h2></div><div class="restore-body"><p id="restore-description"></p><div class="button-row"><button class="button secondary" data-action="cancel-restore">Keep current progress</button><button class="button primary" data-action="confirm-restore">Restore backup</button></div></div></dialog>
+  <noscript><p class="panel">DriveReady needs JavaScript for quizzes and saving your progress. Enable it in your browser to start practising.</p></noscript>
+  <div id="toast" class="toast" role="status"></div>
+</body>
+</html>
