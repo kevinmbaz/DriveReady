@@ -24,7 +24,15 @@ The build includes only the website and its assets. It excludes tools, scripts, 
 
 The supplied scans and sign crops are third-party material. Before publishing those assets, confirm you have permission to redistribute them. This repository does not grant a licence to the book. The app identifies its practice and readiness figures as unofficial; exam rules have not been independently verified against current requirements.
 
-No deployment has been performed. No analytics or external trackers are included. The in-app privacy explanation describes local storage and notes that hosting providers may retain ordinary request logs.
+No analytics or external trackers are included. The in-app privacy explanation describes local storage and notes that hosting providers may retain ordinary request logs.
+
+## Vercel deployment
+
+The root `vercel.json` explicitly selects the **Other** framework (`framework: null`), runs `npm ci` and `npm run build`, and publishes only `dist`. These settings override the equivalent project dashboard settings. Keep the Vercel Root Directory set to the repository root so it finds this file.
+
+The homepage is served from `dist/index.html` at `/`. Navigation such as `/#readiness` is handled in the browser. `server.cjs` is a local preview helper and must not be configured as a Vercel Function or as the production entrypoint. No rewrite to a server function is needed.
+
+If an older deployment returns `500 FUNCTION_INVOCATION_FAILED`, deploy the latest commit containing `vercel.json`. Confirm the deployment's source commit matches the latest GitHub commit; redeploying an old deployment does not pick up later code. If needed, use the current `main` branch to create a fresh deployment. Check the build output for static files rather than a server function.
 
 ## Readiness calculation
 
